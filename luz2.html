@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+     <meta charset="UTF-8">
+     <title> Luz Elena Gonzalez- ¿Quién es? </title>
+         <style>
+             /* Elimina todos los bordes externos y huecos blancos del navegador */
+             html, body {
+                 margin: 0;
+                 padding: 0;
+                 width: 100%;
+                 min-height: 100vh;
+                 background-color: rgb(230, 165, 225); /* El rosa cubre TODA la pantalla */
+                 font-family: sans-serif;
+                 display: flex;
+                 flex-direction: column;
+             }
+
+
+             /* Cabecera de lado a lado */
+             header {
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 background-color: rgb(215, 145, 210); /* Tono un poco más oscuro para contrastar */
+                 padding: 15px 30px;
+                 box-sizing: border-box;
+             }
+
+
+             .logo-pequeno {
+                 width: 50px;
+                 height: auto;
+                 display: block;
+             }
+
+
+             .barra-navegacion {
+                 display: flex;
+                 gap: 15px;
+                 margin-top: 10px;
+             }
+
+
+             .boton-nav {
+                 text-decoration: none;
+                 color: rgb(0, 0, 0);
+                 background-color: rgb(251, 133, 221);
+                 padding: 8px 16px;
+                 border-radius: 4px;
+                 font-size: 14px;
+                 transition: background-color 0.3s;
+             }
+
+
+             .boton-nav:hover {
+                 background-color: rgb(251, 133, 221);
+                 color: white;
+             }
+
+
+             .boton-nav.activo {
+                 background-color: rgb(248, 188, 238); /* Color estático */
+                 color: white;
+                 font-weight: bold;
+             }
+
+
+             /* Contenedor principal que se estira al ancho completo */
+             main {
+                 display: flex;
+                 gap: 30px;
+                 padding: 30px;
+                 box-sizing: border-box;
+                 flex: 1; /* Empuja el footer hacia abajo */
+                 width: 100%;
+             }
+
+
+             /* Columna del anuncio */
+             aside {
+                 width: 25%;
+                 display: flex;
+                 justify-content: center;
+                 align-items: flex-start;
+             }
+
+
+             aside img {
+                 width: 100%;
+                 max-width: 350px;
+                 height: auto;
+                 display: block;
+                 border-radius: 4px;
+             }
+
+
+             /* Columna de la información */
+             section {
+                 width: 75%;
+                 display: flex;
+                 flex-direction: column;
+             }
+
+
+             article {
+                 width: 100%;
+                 background-color: rgb(238, 170, 235); /* El fondo rosa de tu tarjeta */
+                 padding: 25px;
+                 border-radius: 6px;
+                 box-sizing: border-box;
+             }
+
+
+             article img {
+                 max-width: 100%;
+                 height: auto;
+                 display: block;
+                 margin-bottom: 20px;
+                 border-radius: 4px;
+             }
+
+
+             /* Pie de página de lado a lado */
+             footer {
+                 background-color: rgb(215, 145, 210);
+                 text-align: center;
+                 padding: 15px;
+                 width: 100%;
+                 box-sizing: border-box;
+             }
+
+
+             footer p {
+                 margin: 0;
+                 font-size: 14px;
+             }
+         </style>
+    </head>  
+    <body>
+        <header>
+            <div>
+                <h1 style="margin:0;">Mi sitio web</h1>
+                <nav class="barra-navegacion">
+                    <a href="index.html" class="boton-nav activo">Inicio Kali Uchis</a>
+                    <a href="luz2.html" class="boton-nav">Quien es Kali Uchis</a>
+                    <a href="luz3.html" class="boton-nav">Donde empezo Kali Uchis</a>
+                </nav>
+            </div>
+            <img src="imagenes/logo.webp" alt="logo de mi sitio web" title="logo de la marca" class="logo-pequeno">
+        </header>
+
+
+        <main>
+            <aside>
+                <img src="imagenes/publi 2.webp" alt="anuncios">
+            </aside>
+            <section>
+                <article>
+                    <img src="imagenes/kali 222.jpg" alt="foto">
+                    <h1>Kali Uchis</h1>
+                    <p>Kali Uchis es una cantante, compositora y productora estadounidense-colombiana conocida por mezclar géneros como R&B, soul, pop, reguetón y música latina. Su nombre real es Karly-Marina Loaiza y nació el 17 de julio de 1994 en Virginia, Estados Unidos. Se hizo conocida inicialmente por publicar música de manera independiente y después alcanzó fama internacional con canciones como “telepatía”, “Moonlight” y “After the Storm”. Su música destaca por combinar canciones en inglés y español y por una estética visual inspirada en diferentes épocas.</p>
+                </article>
+            </section>
+        </main>
+
+
+        <footer>
+            <p>Creado por Luz Elena Gonzalez</p>
+        </footer>
+    </body>
+</html>
